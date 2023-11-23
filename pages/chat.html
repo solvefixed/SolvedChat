@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/85f132b351.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/socket.io.js"></script>
+		<script src="/js/script.js"></script>
+		<title>SolvedChat</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-wrap">
+				<a class="header-title" href="/">SolvedChat</a>
+				<a class="header-username username" href="/reset"></a>
+			</div>
+		</header>
+		<main class="content">
+			<section class="chat">
+				<div class="card">
+					<div class="chat-card-body card-body">
+						<div class="chat-card-msg-list"></div>
+					</div>
+					<footer class="chat-card-footer card-footer">
+						<textarea
+							class="chat-card-textarea textarea"
+							style="height: 37px"
+							placeholder="Enter text..."
+						></textarea>
+						<button
+							class="chat-card-send-button"
+							style="display: none"
+							type="button"
+						>
+							<i class="fa-solid fa-arrow-up"></i>
+						</button>
+					</footer>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
