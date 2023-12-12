@@ -1,29 +1,29 @@
 interface Message {
-	userId: string
-	username: string
-	timestamp: number
-	text: string
+  userId: string
+  username: string
+  timestamp: number
+  text: string
 }
 
 export class ChatController {
-	messages: Message[]
+  messages: Message[]
 
-	constructor() {
-		this.messages = []
-	}
+  constructor() {
+    this.messages = []
+  }
 
-	addMessage(
-		userId: string,
-		username: string,
-		timestamp: number,
-		text: string
-	) {
-		const message: Message = { userId, username, timestamp, text }
-		this.messages.push(message)
-		return message
-	}
+  addMessage(
+    userId: string,
+    username: string,
+    timestamp: number,
+    text: string,
+  ) {
+    const message: Message = { userId, username, timestamp, text }
+    this.messages.push(message)
+    return message
+  }
 
-	getMessages() {
-		return this.messages.slice(-50)
-	}
+  getMessages() {
+    return this.messages.slice(-50)
+  }
 }
